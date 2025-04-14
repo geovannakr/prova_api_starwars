@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemBuilder: (context, index) {
                   final character = people[index];
                   return Card(
-                    color: const Color.fromARGB(255, 113, 85, 118),
+                    color: const Color.fromARGB(255, 59, 33, 63),
                     elevation: 6,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
