@@ -1,20 +1,82 @@
-# starwars_pi_app_fluter
+# Star Wars PI App (Flutter)
 
-Novo projeto Flutter.
+Aplicativo Flutter desenvolvido como trabalho avaliativo, com o objetivo de consumir uma API e criar uma experiência de navegação entre personagens.
 
-## Trabalho avaliativo usando API para construir um app de duas telas de personagens
+**Por que Star Wars?**
+Originalmente, a ideia era usar a API do Breaking Bad, mas devido a problemas de funcionamento, optei pela API de Star Wars, que se mostrou mais estável e prática para o escopo do projeto.
 
-Escolhi essa API porque a API de Breaking Bead não funcionou. O App foi dividido em duas telas, sendo elas home_screen.dart e character_details_screen.dart. Nas duas telas estão os códigos que mostram o que há nas telas, mas existem outros arquivos trabalhando juntos para que isso funcione, como o main.dart, api_service.dart e o person.dart. Não trabalhei com imagens porque não consegui desenvolver direito, então preferi dar o meu máximo em relação à decoração da página para suprir à falta das imagens. Para executar o projeto basta dar F5 na main.dart e aguardar o carregamento da página e então, usá-la.
+---
 
-Geovanna de Sousa Krüger - MIDS 76.
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+* Listagem de personagens na tela inicial (`home_screen.dart`).
+* Tela de detalhes para cada personagem selecionado (`character_details_screen.dart`).
+* Organização do projeto em arquivos separados:
 
-A few resources to get you started if this is your first Flutter project:
+  * `main.dart`: ponto de entrada da aplicação.
+  * `api_service.dart`: responsável por fazer requisições HTTP à API.
+  * `person.dart`: modelo que representa os dados de cada personagem.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Observação:** Neste projeto, optei por não trabalhar com imagens, pois enfrentei algumas dificuldades técnicas. Para compensar, caprichei no visual e na organização da interface.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Estrutura do Projeto
+
+```
+lib/
+├── main.dart
+├── models/
+│   └── person.dart
+├── services/
+│   └── api_service.dart
+├── screens/
+│   ├── home_screen.dart
+│   └── character_details_screen.dart
+```
+
+---
+
+## Objetivo do Projeto
+
+Desenvolver um app Flutter que apresentasse:
+
+* Uma lista de personagens consumida via API.
+* Uma navegação fluida para a tela de detalhes.
+* Organização modular do código.
+* Tratamento de erros e carregamento de dados.
+* (Opcional) Animações e transições com o Hero widget.
+
+---
+
+## Como Executar
+
+1. Abra o projeto no seu editor Flutter (VS Code, Android Studio etc.).
+2. Execute o comando ou atalho:
+
+   ```
+   F5
+   ```
+
+   ou
+
+   ```
+   flutter run
+   ```
+3. Aguarde o carregamento e navegue pelas telas.
+
+---
+
+## Aprendizados
+
+* Consumo de API e transformação de dados em modelos Dart.
+* Navegação entre telas no Flutter.
+* Organização de código em múltiplos arquivos.
+* Desafios com imagens e como contornar limitações priorizando a experiência do usuário.
+
+---
+
+Geovanna de Sousa Krüger
+MIDS 76
+
+---
